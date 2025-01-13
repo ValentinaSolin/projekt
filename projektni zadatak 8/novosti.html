@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soling d.o.o. - Keramičarski radovi, postavljanje pločica, renovacije i izrada keramike za dom i poslovne prostore.">
+    <meta name="keywords" content="keramika, pločice, keramičarski radovi, postavljanje pločica, renovacije, Soling d.o.o.">
+    <meta name="author" content="Valentina Solin">
+    <title>Soling d.o.o.</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+	<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        /* Reset stila */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FDF5E6;
+            color: #000000;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            background: url('images/NASLOVNA.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 7rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        nav {
+            background: #DAA520;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 3rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8B0000;
+            font-size: 1.5rem;
+        }
+		main {
+            padding: 2rem;
+            text-align: justify;
+        }
+
+				.article {
+					background-color: white;
+					border-radius: 8px;
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+					margin-bottom: 1.5rem;
+					padding: 1rem;
+				}
+
+								/* Stil za thumbnail slike */
+				.article-thumb {
+					width: 20%;
+					float: left;
+					margin-right: 20px;
+				}
+
+				.article-thumb img {
+					width: 100%;
+					height: auto;
+					border-radius: 8px;
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				}
+
+				.article-content {
+					overflow: hidden;
+					width:55%;
+				}
+
+				/* Stil za datum */
+				.article-date {
+					font-size: 0.5rem;
+					color: #8B0000;
+					margin-top: 5px;
+					font-weight: bold;
+				}
+
+				.article h2 {
+					font-size: 2rem;
+					margin-top:0;
+				}
+
+				.article p {
+					font-size: 1.2rem;
+				}
+
+				.article-footer {
+					margin-top: 10px;
+					text-align: right;
+				}
+
+				.article-footer a {
+					color: #DAA520;
+					text-decoration: none;
+					font-weight: bold;
+				}
+
+				.article-footer a:hover {
+					color: #8B0000;
+				}
+				/* Razdvajanje slika i teksta */
+				.article:after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+				/* Čistimo float za svaki članak */
+				.article:after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+
+		footer {
+			background-color: #DAA520;  /* Isto kao izbornik */
+			padding: 2rem;
+			text-align: center;
+			color: white;
+		}
+
+		footer .footer-content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		footer .social-links {
+			display: flex;
+			justify-content: center;
+			gap: 1.0rem;
+			margin-top:1rem;
+		}
+
+		footer .social-links a {
+			font-size: 2rem;
+			color: white;  /* Bijela boja ikona */
+			transition: transform 0.5s ease, color 0.3s ease;
+		}
+
+		footer .social-links a:hover {
+			transform: scale(1.5);  /* Efekt povećanja ikona */
+			color: #8B0000;  /* Promjena boje na hover */
+		}
+
+		/* Footer tekst s copyrightom */
+		footer .footer-text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			margin-top: 1rem;
+			transition: color 0.5s ease;
+		}
+
+		footer .footer-text p {
+			font-size: 1rem;
+			color: white;
+			margin-top: 1rem;
+		}
+
+		/* Promjena boje cijelog reda kad se mišem pređe preko njega */
+		footer .footer-text:hover {
+			color: #8B0000;
+		}
+
+		footer .footer-text a {
+			font-size: 2rem;
+			color: white;
+			text-decoration: none;
+		}
+
+		footer .footer-text a:hover {
+			color: #8B0000;
+		}
+		footer .footer-text:hover {
+         color: #8B0000;  /* Promjena boje cijelog reda */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soling d.o.o.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+   <main>
+        <div class="article">
+		<div class="article-thumb">
+		<img src="./news/article1.jpg">
+		</div>
+		<div class="article-content">
+            <h2>Kako odabrati savršene pločice za Vaš dom?</h2>
+            <p>Vodič za odabir pločica prema stilu, veličini prostora, bojama i funkcionalnosti....</p>
+			<p class="article-date">26.07.2024.</p>
+			<div class="article-footer">
+                <a href="article1.html">Pročitaj više</a>
+            </div>
+        </div>
+		</div>
+
+        <div class="article">
+		<div class="article-thumb">
+            <img src="news/article2.jpg" alt="Članak 2">
+		</div>
+		<div class="article-content">
+            <h2>Kako pravilno održavati keramičke pločice i podove</h2>
+            <p>Keramičke pločice su izdržljiv i estetski privlačan materijal koji zahtijeva pravilno održavanje kako bi zadržale svoj besprijekoran izgled i dugovječnost, a u ovom članku saznajte kako ih pravilno održavati, čistiti i štititi od oštećenja.</p>
+            <p class="article-date">25.09.2023.</p>
+			<div class="article-footer">
+                <a href="article2.html">Pročitaj više</a>
+            </div>
+        </div>
+		</div>
+		
+		 <div class="article">
+		<div class="article-thumb">
+            <img src="news/article3.jpg" alt="Članak3">
+		</div>
+		<div class="article-content">
+            <h2>Postavljanje keramičkih pločica: Korak po korak vodič za DIY projekte</h2>
+            <p>Detaljan vodič o tome kako sami postaviti keramičke pločice – od pripreme podloge do samog polaganja pločica i fugiranja, uz savjete za preciznost i profesionalni izgled.</p>
+            <p class="article-date">23.02.2023.</p>
+			<div class="article-footer">
+                <a href="article3.html">Pročitaj više</a>
+            </div>
+        </div>
+		</div>
+		
+		 <div class="article">
+		<div class="article-thumb">
+            <img src="news/article4.jpg" alt="Članak 4">
+		</div>
+		<div class="article-content">
+            <h2>Kako odabrati i postaviti keramičke pločice za tuš kabinu</h2>
+            <p> Tuš kabina je jedan od najposećenijih dijelova svakog doma, stoga je važno odabrati keramičke pločice koje nisu samo estetski privlačne, već i dugotrajne i praktične. U ovom članku donosimo vam sve što trebate znati o odabiru i postavljanju pločica za tuš kabinu – od materijala, boja i oblika, do tehnika postavljanja i održavanja.</p>
+            <p class="article-date">12.06.2022.</p>
+			<div class="article-footer">
+                <a href="article4.html">Pročitaj više</a>
+            </div>
+        </div>
+		</div>
+		
+		 <div class="article">
+		<div class="article-thumb">
+            <img src="news/article5.jpg" alt="Članak 5">
+		</div>
+		<div class="article-content">
+            <h2>Keramičke pločice u kuhinji: Kako odabrati i postaviti pločice za kuhinjske prostore</h2>
+            <p> Keramičke pločice u kuhinji nisu samo funkcionalne, već mogu značajno unaprijediti izgled prostora. Bilo da se radi o pločicama za zidove, podove ili kuhinjski backsplash, pravilno odabrane pločice mogu stvoriti ujednačen i elegantan dizajn koji je i dugotrajan i lako održavan.</p>
+            <p class="article-date">07.12.2021.</p>
+			<div class="article-footer">
+                <a href="article5.html">Pročitaj više</a>
+            </div>
+        </div>
+		</div>
+		
+    </main>
+ <footer>
+        <div class="footer-text">
+            <p>Copyright &copy; 2025. Valentina Solin</p>
+			</div>
+			<div class="footer-content">
+			 <div class="social-links">
+			<a href="https://github.com/ValentinaSolin/projekt" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

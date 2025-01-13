@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soling d.o.o. - Keramičarski radovi, postavljanje pločica, renovacije i izrada keramike za dom i poslovne prostore.">
+    <meta name="keywords" content="keramika, pločice, keramičarski radovi, postavljanje pločica, renovacije, Soling d.o.o.">
+    <meta name="author" content="Valentina Solin">
+    <title>Soling d.o.o.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        /* Reset stila */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #FDF5E6;
+            color: #000000;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            background: url('images/NASLOVNA.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 7rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        }
+
+        h2 {
+            color: #8B0000;
+            font-size: 3rem;
+        }
+
+        nav {
+            background: #DAA520;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 3rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+        }
+
+        nav ul li a:hover {
+            color: #8B0000;
+            font-size: 1.5rem;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        form input, form select, form textarea {
+            padding: 1rem;
+            font-size: 1.2rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+
+        form input[type="submit"] {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #DAA520;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px; /* Povećana visina mape */
+            border: 0;
+        }
+
+        footer {
+            background-color: #DAA520;  /* Isto kao izbornik */
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+        footer .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.0rem;
+            margin-top: 1rem;
+        }
+
+        footer .social-links a {
+            font-size: 3rem;
+            color: white;  /* Bijela boja ikona */
+            transition: transform 0.5s ease, color 0.3s ease;
+        }
+
+        footer .social-links a:hover {
+            transform: scale(1.8);  /* Efekt povećanja ikona */
+            color: #8B0000;  /* Promjena boje na hover */
+        }
+
+        footer .footer-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            transition: color 0.5s ease;
+        }
+
+        footer .footer-text p {
+            font-size: 1rem;
+            color: white;
+            margin-top: 1rem;
+        }
+
+        footer .footer-text:hover {
+            color: #8B0000;
+        }
+
+        footer .footer-text a {
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        footer .footer-text a:hover {
+            color: #8B0000;
+        }
+
+        footer .footer-text:hover {
+            color: #8B0000;  /* Promjena boje cijelog reda */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soling d.o.o.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Kontaktirajte nas i saznajte više!</h2>
+        <form action="/submit-form" method="POST">
+            <label for="first-name">Ime*</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Prezime*</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">E-mail adresa*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="country">Država</label>
+            <select id="country" name="country">
+                <option value="">Odaberite</option>
+                <option value="hr">Hrvatska</option>
+                <option value="rs">Srbija</option>
+                <option value="ba">Bosna i Hercegovina</option>
+                <option value="si">Slovenija</option>
+            </select>
+
+            <label for="message">Opis</label>
+            <textarea id="message" name="message" rows="5" placeholder="Vaša poruka..."></textarea>
+
+            <input type="submit" value="Pošalji">
+        </form>
+        <h2>Potražite nas ovdje</h2>
+        <!-- Google mapa bez API ključa -->
+        <iframe 
+            width="100%" 
+            height="600" 
+            style="border:0;" 
+            loading="lazy" 
+            allowfullscreen 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.8582602280454!2d15.9935497!3d45.8132319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476cdb118fda4b0f%3A0x4fc9f8cfca0137d!2sPodgorska%20ulica%2016%2C%2001000%20Zagreb!5e0!3m2!1shr!2shr!4v1673707652842!5m2!1shr!2shr">
+        </iframe>
+    </main>
+    <footer>
+        <p>Potražite nas na društvenim mrežama:</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Copyright &copy; 2025. Valentina Solin</p>
+    </footer>
+</body>
+</html>
